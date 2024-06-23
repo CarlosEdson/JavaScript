@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula de Variaveis</title>
+    <title>Document</title>
 </head>
 <body>
     <style>
@@ -18,10 +18,11 @@
 <body>
     <h1>Olá Mundo</h1>
     <p>Esse é o meu primeiro codigo com JS</p>
-</body>
-<script>
-    var nome = window.prompt('Qual seu Nome?')
-    window.alert('É um grande Prazer lhe conhecer, ' + nome)
-</script>
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um Número:'))
+        var n2 = Number.parseInt(window.prompt('Digite um Segundo Número:'))
+        var soma = (n1 + n2)
+        window.alert(`A soma entre ${n1} e ${n2} é ${soma}`)
+    </script>
 </body>
 </html>
