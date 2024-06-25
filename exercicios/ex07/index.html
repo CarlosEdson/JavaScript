@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soamndo Numeros</title>
+    <style>
+        div{
+            height: 50px;
+            width: 80px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando Valores</h1>
+    <label for="prim_num">Digite seu Primeiro Número: </label>
+    <input type="number" name="txtn1" id="prim_num"> <br>
+    <label for="seg_num">Digite seu Segundo Número: </label>
+    <input type="number" name="txtn2" id="seg_num"> <br>
+    <input type="button" value="Somar" onclick="soma()">
+
+    <div id="result">Resultado</div>
+
+    <script>
+        function soma(){
+            var cx1 = document.getElementById('prim_num')
+            var cx2 = document.getElementById('seg_num')
+            var res = document.getElementById('result')
+
+            var n1 = Number(cx1.value)
+            var n2 = Number(cx2.value)
+            var s = n1 + n2
+            result.innerHTML = s
+        }
+    </script>
+</body>
+</html>
