@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recebimento de Dados</title>
+    <style>
+        input{
+            height: 30px;
+            width: 80px;
+        }
+        div{
+            height: 30px;
+            width: 80px;
+            border: 1px solid black;
+            display: inline-block;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <h1>recebimento de Informaçoes de Usuario</h1>
+    <input type="number" name="cx1" id="n1"> +
+    <input type="number" name="cx2" id="n2"> =
+    <div id="resultado">0</div>
+
+    <button onclick="soma()">Somar</button>
+
+    <script>
+        function soma(){
+            var cx1 = document.querySelector('#n1')
+            var cx2 = document.querySelector('#n2')
+
+            var num1 = Number(cx1.value)
+            var num2 = Number(cx2.value)
+
+            var res = num1 + num2
+            resultado.innerHTML = res
+        }
+    </script>
+</body>
+</html>
