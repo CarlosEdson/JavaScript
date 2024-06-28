@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recebimento_de_valores</title>
+</head>
+<body>
+    <h1>Multometro</h1>
+    <label for="valor">Digite a Velocidade:</label>
+    <input type="number" name="val" id="ivalor">
+    <button id="cal" onclick="calcular()">Calcular</button>
+    <div id="resultado">0</div>
+
+    <script>
+        var cx1 = document.querySelector('#ivalor')
+        var cx2 = document.querySelector('#resultado')
+        function calcular(){
+            var velocidade = Number(cx1.value)
+        }
+        velocidade.innerHTML = 'Sua Velocidade é de: ' + velocidade + 'KM/H'
+    </script>
+</body>
+</html>
