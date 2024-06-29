@@ -6,19 +6,23 @@
     <title>Recebimento_de_valores</title>
 </head>
 <body>
-    <h1>Multometro</h1>
-    <label for="valor">Digite a Velocidade:</label>
-    <input type="number" name="val" id="ivalor">
-    <button id="cal" onclick="calcular()">Calcular</button>
-    <div id="resultado">0</div>
+    <h1>Conhecendo Você</h1>
+    <label for="inome">Digite seu Pais:</label>
+    <input type="text" name="nom" id="inome">
+    <button id="pesq" onclick="pesquisa()">Pesquisar</button>
+    <div id="inf">Informativo</div>
 
     <script>
-        var cx1 = document.querySelector('#ivalor')
-        var cx2 = document.querySelector('#resultado')
-        function calcular(){
-            var velocidade = Number(cx1.value)
+        function pesquisa(){
+            var nome = document.querySelector('#inome')
+
+            inf.innerHTML = 'Seu Pais Digitafo foi ' + nome
+            if(nome = brasil){
+                inf.innerHTML += 'Você é do Brasil'
+            } else{
+                inf.innerHTML += 'Você não é Brasileiro'
+            }
         }
-        velocidade.innerHTML = 'Sua Velocidade é de: ' + velocidade + 'KM/H'
     </script>
 </body>
 </html>
