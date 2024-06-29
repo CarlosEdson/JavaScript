@@ -3,39 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recebimento de Dados</title>
-    <style>
-        input{
-            height: 30px;
-            width: 80px;
-        }
-        div{
-            height: 30px;
-            width: 80px;
-            border: 1px solid black;
-            display: inline-block;
-            text-align: right;
-        }
-    </style>
+    <title>multometro</title>
 </head>
 <body>
-    <h1>recebimento de Informaçoes de Usuario</h1>
-    <input type="number" name="cx1" id="n1"> +
-    <input type="number" name="cx2" id="n2"> =
-    <div id="resultado">0</div>
+    <h1>Multometro</h1>
+    <label for="">Digite a sua Velocidade:</label>
+    <input type="number" name="" id="num">
+    <button onclick="calculo()">Pesquisar</button>
 
-    <button onclick="soma()">Somar</button>
+    <div id="result">Resultado</div>
 
     <script>
-        function soma(){
-            var cx1 = document.querySelector('#n1')
-            var cx2 = document.querySelector('#n2')
+        var cx = document.querySelector('#num')
+        function calculo(){
+            var vel = Number(cx.value)
+            result.innerHTML = 'Cuidado ao Dirigir'
 
-            var num1 = Number(cx1.value)
-            var num2 = Number(cx2.value)
-
-            var res = num1 + num2
-            resultado.innerHTML = res
+            if(vel >= 60){
+                result.innerHTML += 'Você estava acima da Velocidade permitida, MULTADO'
+            } else{
+                result.innerHTML += 'Boa Viagem'
+            }
         }
     </script>
 </body>

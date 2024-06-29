@@ -6,27 +6,25 @@
     <title>Calculo</title>
 </head>
 <body>
-    <h1>Calculo de Media</h1>
-    <label for="">Nota 01:</label>
-    <input type="number" name="in1" id="in1"> <br>
-    <label for="">Nota 02:</label>
-    <input type="number" name="in2" id="in2"> <br>
-    <button id="soma()">Calcular</button>
-    
+    <h1>Media</h1>
+    <label for="">Nota 1:</label>
+    <input type="number" name="cxt1" id="n1"> <br>
+    <label for="">Nota 2:</label>
+    <input type="number" name="cxt2" id="n2">
+    <button onclick="calculo()">Calcular</button>
+
     <div id="res">Resultado</div>
 
     <script>
-        function soma(){
-            var cx1 = document.querySelector('#in1')
-            var cx2 = document.querySelector('#in2')
-            var res = document.querySelector('#res')
+        var item1 = document.querySelector('#n1')
+        var item2 = document.querySelector('#n2')
 
-            var nt1 = Number(cx1.value)
-            var nt2 = Number(cx.value)
+        function calculo(){
+            var nota1 = Number(item1.value)
+            var nota2 = Number(item2.value)
+            var divisao = (nota1 + nota2) / 2
 
-            var s = nt1 + nt2
-
-            res.innerHTML = 'A soma entre ${nt1} e ${nt2} é igual á ${s}'
+            res.innerHTML = divisao
         }
     </script>
 </body>

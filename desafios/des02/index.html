@@ -3,25 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recebimento_de_valores</title>
+    <title>Nacionalidade</title>
 </head>
 <body>
-    <h1>Conhecendo Você</h1>
-    <label for="inome">Digite seu Pais:</label>
-    <input type="text" name="nom" id="inome">
-    <button onclick="pesquisa()">pesquisar</button>
+    <h1>Qual o seu Pais?</h1>
+    <label for="">De onde Você?</label>
+    <input type="text" name="cx" id="local"> <br>
+    <button onclick="busca()">Buscar</button>
 
-    <div id="inf">Informativo</div>
+    <div id="res">Resultado</div>
 
     <script>
-        function pesquisa(){
-            var pais = document.querySelector('#inome')
+        var caixa = document.querySelector('#local')
 
-            inf.innerHTML = 'Seu Pais Digitafo foi ' + pais
-            if(pais = brasil){
-                inf.innerHTML += 'Você é do Brasil'
+        function busca(){
+            if(caixa = 'Brasil'){
+                res.innerHTML = 'Você é Nacional'
             } else{
-                inf.innerHTML += 'Você não é Brasileiro'
+                res.innerHTML = 'Você é Estrangeiro'
             }
         }
     </script>
