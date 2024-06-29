@@ -9,15 +9,16 @@
     <h1>Conhecendo Você</h1>
     <label for="inome">Digite seu Pais:</label>
     <input type="text" name="nom" id="inome">
-    <button id="pesq" onclick="pesquisa()">Pesquisar</button>
+    <button onclick="pesquisa()">pesquisar</button>
+
     <div id="inf">Informativo</div>
 
     <script>
         function pesquisa(){
-            var nome = document.querySelector('#inome')
+            var pais = document.querySelector('#inome')
 
-            inf.innerHTML = 'Seu Pais Digitafo foi ' + nome
-            if(nome = brasil){
+            inf.innerHTML = 'Seu Pais Digitafo foi ' + pais
+            if(pais = brasil){
                 inf.innerHTML += 'Você é do Brasil'
             } else{
                 inf.innerHTML += 'Você não é Brasileiro'
