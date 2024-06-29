@@ -7,25 +7,26 @@
 </head>
 <body>
     <h1>Calculo de Media</h1>
-    <label for="in1">Nota 01:</label>
-    <input type="number" name="" id="in1"> <br>
-    <label for="in2">Nota 02:</label>
-    <input type="number" name="" id="in2"> <br>
+    <label for="">Nota 01:</label>
+    <input type="number" name="cxt1" id="in1"> <br>
+    <label for="">Nota 02:</label>
+    <input type="number" name="cxt2" id="in2"> <br>
+    <button id="soma()">Calcular</button>
     
     <div id="res">Resultado</div>
 
     <script>
         function soma(){
-            var cx1 = document.querySelector('in1')
-            var cx2 = document.querySelector('in2')
-            var rest = document.querySelector('#res')
+            var cx1 = document.querySelector('#in1')
+            var cx2 = document.querySelector('#in2')
+            var res = document.querySelector('#res')
 
             var nt1 = Number(cx1.value)
             var nt2 = Number(cx.value)
 
-            var s = nt1 + nt2 /2
+            var s = nt1 + nt2
 
-            rest.innerHTML = s
+            res.innerHTML = s
         }
     </script>
 </body>
