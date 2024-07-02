@@ -24,5 +24,7 @@ section > #msg{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #imagem{
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
 }
