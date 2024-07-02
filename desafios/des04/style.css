@@ -1,0 +1,28 @@
+@charset "UTF-8";
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    background-color: aqua;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    height: 400px;
+    width: 500px;
+}
+section > #msg{
+    padding: 20px 0px;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#imagem{
+    border-radius: 50%;
+}
