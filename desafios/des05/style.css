@@ -23,9 +23,7 @@ label{
 input{
     margin: 15px;
 }
-#masc, #fem, button{
-    cursor: pointer;
-}
-#res{
-    padding-top: 15px;
+button{
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
