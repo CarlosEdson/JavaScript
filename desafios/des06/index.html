@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Teste-de-conhecimento</title>
 </head>
 <body>
@@ -10,17 +11,20 @@
         <h1>Tetste</h1>
     </header>
     <form action="">
-        <label for="">Digite o ano de seu Nasciemnto:</label>
-        <input type="number" name="" id="ano-nasciemnto"> <br>
+        <label for="ano-nasciemnto">Digite o ano de seu Nasciemnto:</label>
+        <input type="number" name="" id="nasciemnto"> <br>
 
-        <label for="">Digite seu Sexo:</label>
+        <p>Digite seu Sexo:
         <input type="radio" name="radsex" id="mas">
         <label for="mas">Masculino</label>
         <input type="radio" name="radsex" id="fem">
         <label for="fem">Feminino</label> <br>
-    </form>
-    <button onclick="consultar()">Consultar</button>
+        </p>
 
-    <div id="resultado">Preencha os Dados Acima para ter o resultado</div>
+        <button onclick="consultar()">Consultar</button>
+
+        <div id="res">Preencha os Dados Acima para ter o resultado</div>
+    </form>
+    <script src="script.js"></script>
 </body>
 </html>
