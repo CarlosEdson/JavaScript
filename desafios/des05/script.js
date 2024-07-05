@@ -3,6 +3,7 @@ function consultar(){
     var res = document.querySelector('#res')
     var data = new Date() //data atual
     var ano = data.getFullYear() //pega o ano com 4 digitos
+    
     if(cx1.value.length == 0 || cx1.value > ano){
         window.alert('[ERRO] Verifique seus Dados')
     } else{
