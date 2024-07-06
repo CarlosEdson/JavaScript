@@ -9,6 +9,12 @@ function consultar(){
     } else {
         var idade = ano - Number(ano_nascimento.value)
         var sexo = document.getElementsByClassName('radsex')
-        res.innerHTML = `Sua idade é ${idade}`
+        var genero = ''
+        if(sexo[0].checked){
+            genero = 'Homem'
+        } else {
+            genero = 'Mulher'
+        }
+        res.innerHTML = `Você é um ${genero} de ${idade} anos`
     }
 }
