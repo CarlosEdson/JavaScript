@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        section{
+            background-color: aqua;
+            height: 300px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <h1>teste</h1>
+        <form action="#">
+            <label for="num1">Primeiro Número:</label>
+            <input type="number" name="" id="num1">
+            <label for="num2">Ultimo Número</label>
+            <input type="number" name="" id="num2">
+            <label for="passo">Passo</label>
+            <input type="number" name="" id="passo">
+            <button onclick="calcular()" type="button">Calcular</button>
+        </form>
+        <div id="resultado">Resultado</div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
