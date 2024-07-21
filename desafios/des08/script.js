@@ -9,9 +9,15 @@ function calcular(){
         let i = Number(inicio.value)
         let f = Number(fim.value)
         let p = Number(passo.value)
-        resultado.innerHTML = 'contando'
-        for(let c = i; c <= f; c += p){
-            resultado.innerHTML += `${c}`
+        resultado.innerHTML = 'contando...'
+        if(i < f){
+            for(let c = i; c <= f; c += p){
+                resultado.innerHTML += `${c}-`
+            }
+        } else {
+            for(let c = i; c >= f; c -= p){
+                resultado.innerHTML +=`${c}-`
+            }
         }
     }
 }
