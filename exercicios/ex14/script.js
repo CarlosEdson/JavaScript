@@ -1,15 +1,15 @@
 function calcular(){
     let multiplicador = document.querySelector('#num')
-    var resultado = document.querySelector('#resultado')
 
-    let mult = multiplicador.value
+    let mul = Number(multiplicador.value)
 
-    if(mult == ''){
-        window.alert('ERRO, preencha os campos')
+    if(mul == ''){
+        window.alert('ERRO, Precisamos dos parametros')
     } else {
-        for(let contador = mult; mult <= 10; contador++){
-            res = contador * mult
+        for(let contador = 1; contador <= 10; contador++){
+            let res = contador * mul
+
+            resultado.innerHTML += `<br>${contador} x ${mul} = ${res}`
         }
-        resultado.innerHTML += `${contador} x ${mult} = ${res}`
     }
 }
