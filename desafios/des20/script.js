@@ -1,4 +1,5 @@
 let cx1 = document.querySelector('#num')
+let valores = []
 function adicionar(){
     let valor = Number(cx1.value)
     
